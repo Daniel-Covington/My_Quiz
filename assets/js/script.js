@@ -24,7 +24,7 @@ startButton.addEventListener('click', startQuiz);
 highScoreButton.addEventListener('click', viewHighScores);
 
 function startQuiz() {
-  hideStartButton();
+  startButton.classList.add('hide'); 
   // Reset the questions
   shuffledQuestions = questions;
   currentQuestionIndex = 0;
@@ -51,11 +51,8 @@ function startQuiz() {
   startTimer();
 
 }
-
-function hideStartButton() {
-  const startButton = document.getElementById('start-btn');
-  startButton.classList.add('hide'); 
-}
+  
+// }
 // Function to show the question
 function showQuestion() {
   resetState();
