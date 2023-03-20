@@ -224,7 +224,8 @@ function viewHighScores() {
   // Add event listeners to the buttons
   const goBackButton = document.getElementById('go-back-btn');
   goBackButton.addEventListener('click', () => {
-    location.href = "/"
+    // location.href = "/"
+    location.reload();
   });
 
   const clearHighScoresButton = document.getElementById('clear-high-scores-btn');
